@@ -1,0 +1,31 @@
+<!DOCtybe >
+<html>
+<head>
+
+</head>
+  <body>
+   <form class="myform">
+       <label>How much was your bill?</label>
+       <input id="bill"> 
+     <br> <br>
+       <label>From 1 to 10 how was your service? </label>  
+        <input id="service">
+     <br> <br> 
+        <label>How many people are sharing the bill ?</label>  
+        <input id="people"> 
+     <br> <br> 
+         <button type="button" onclick="tipFunction()"> CALCULATE NOW ! </button> 
+        <p id="calculation"></p>
+   </form>
+<script>
+    function tipFunction() {
+    var x,y,z,result ; 
+    x = document.getElementById ("bill").value;
+    y = document.getElementById ("service").value;
+    z = document.getElementById ("people").value;
+    result = (x * y/ 10) /z;
+    document.getElementById("calculation").innerHTML ="tip amount for each is " + " " + result +"$" ;
+        }
+    </script>
+</body>
+</html>
